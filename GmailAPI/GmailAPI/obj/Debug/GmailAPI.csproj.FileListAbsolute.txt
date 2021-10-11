@@ -53,3 +53,35 @@ C:\Users\jiho0\Desktop\GmailAPI_.NET_C#_Everyday Be Coding_Full_Project_SourceCo
 C:\Users\jiho0\Desktop\GmailAPI_.NET_C#_Everyday Be Coding_Full_Project_SourceCode\GmailAPI\GmailAPI\bin\Debug\System.Buffers.xml
 C:\Users\jiho0\Desktop\GmailAPI_.NET_C#_Everyday Be Coding_Full_Project_SourceCode\GmailAPI\GmailAPI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\jiho0\Desktop\GmailAPI_.NET_C#_Everyday Be Coding_Full_Project_SourceCode\GmailAPI\GmailAPI\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\GmailAPI.exe.config
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\GmailAPI.exe
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\GmailAPI.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\AngleSharp.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Auth.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Core.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Gmail.v1.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\System.Buffers.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\AngleSharp.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Auth.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Core.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Core.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Gmail.v1.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Google.Apis.Gmail.v1.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\System.Buffers.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.csprojAssemblyReference.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.csproj.CoreCompileInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.csproj.CopyComplete
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.exe
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.pdb

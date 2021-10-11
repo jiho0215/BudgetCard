@@ -80,6 +80,9 @@
     <Compile Include="APIHelper\Gmail.cs" />
     <Compile Include="APIHelper\GmailHelper.cs" />
     <Compile Include="Converters\GmailConverter.cs" />
+    <Compile Include="DataAccess\GmailData.cs" />
+    <Compile Include="DataAccess\GmailDataMock.cs" />
+    <Compile Include="DataAccess\IGmailData.cs" />
     <Compile Include="Implementation.cs" />
     <Compile Include="Models\DailySummary.cs" />
     <Compile Include="Models\Transaction.cs" />
