@@ -80,8 +80,7 @@ C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\Newtonsof
 C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\System.Buffers.xml
 C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\bin\Debug\System.Text.Encoding.CodePages.xml
-C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.csprojAssemblyReference.cache
 C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.csproj.CoreCompileInputs.cache
-C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.csproj.CopyComplete
 C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.exe
 C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\GmailAPI\obj\Debug\GmailAPI.csproj.AssemblyReference.cache

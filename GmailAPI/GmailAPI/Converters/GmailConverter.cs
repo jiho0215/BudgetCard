@@ -36,7 +36,6 @@ namespace GmailAPI.Converters
 
             var parser = new HtmlParser();
             var documentBody = parser.ParseDocument(html).Body;
-            //var test = documentBody.QuerySelectorAll("td").Select(x => x.TextContent).ToList();
 
             //summary date
             var searchText = "Account summary for";
