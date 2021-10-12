@@ -101,9 +101,12 @@ namespace GmailAPI.Converters
         {
             var transactions = new List<Transaction>();
 
-            var targetElement = element.QuerySelectorAll("td").Where(x => x.TextContent.Contains(searchString)).OrderBy(x => x.TextContent.Length).FirstOrDefault();
-            var childNodes = targetElement?.Children;
+            //var targetElement = element.QuerySelectorAll("td").Where(x => x.TextContent.Contains(searchString)).OrderBy(x => x.TextContent.Length).FirstOrDefault();
 
+            var searchText = "Account ending in";
+            var targetElement = element.QuerySelectorAll("td").Where(x => x.TextContent.Contains(searchText)).OrderBy(x => x.TextContent.Length).FirstOrDefault();
+            //table > table
+            var ancestors = targetElement.
 
             return transactions;
         }
