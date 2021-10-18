@@ -3,12 +3,14 @@ using AngleSharp.Dom;
 using AngleSharp.Html.Parser;
 using GmailAPI.APIHelper;
 using GmailAPI.Models;
+using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace GmailAPI.Converters
 {
@@ -20,6 +22,7 @@ namespace GmailAPI.Converters
 
             htmlList?.ForEach(html =>
             {
+                var tst = ConvertToHtmlObj(html);
                 var dailySummary = ConvertToDailySummary(html);
                 if (dailySummary != null)
                 {
@@ -101,14 +104,43 @@ namespace GmailAPI.Converters
         {
             var transactions = new List<Transaction>();
 
+            //var htmldoc = new HtmlDocument();
+            //try
+            //{
+            //    var html = htmldoc.LoadHtml(element.)
+            //}
             //var targetElement = element.QuerySelectorAll("td").Where(x => x.TextContent.Contains(searchString)).OrderBy(x => x.TextContent.Length).FirstOrDefault();
+            //var searchText = "Account ending in";
+            //var targetElement = element.QuerySelectorAll("td").Where(x => x.TextContent.Contains(searchText)).OrderBy(x => x.TextContent.Length).FirstOrDefault();
+           
 
-            var searchText = "Account ending in";
-            var targetElement = element.QuerySelectorAll("td").Where(x => x.TextContent.Contains(searchText)).OrderBy(x => x.TextContent.Length).FirstOrDefault();
-            //table > table
-            var ancestors = targetElement.
-
+            //var foundTopTable = false;
+            //while (!foundTopTable)
+            //{
+            //    if (parent.NodeName == "TABLE")
+            //    {
+            //        var content = parent.TextContent;
+            //        if (content.Contains("Account ending in") && content.Contains("Total Deposits"))
+            //        {
+            //            foundTopTable = true;
+            //        }
+            //    }
+            //    parent = parent.ParentElement;
+            //}
+            Console.ReadLine();
             return transactions;
+        }
+        
+        private List<Transaction> ConvertToHtmlObj(string html)
+        {
+            var htmlDoc = new HtmlDocument();
+            htmlDoc.LoadHtml(html);
+            var htmlBody = htmlDoc.DocumentNode.SelectSingleNode("//body");
+            foreach(var node in htmlBody.ChildNodes)
+            {
+                Console.WriteLine('c' + node.InnerText);
+            }
+            return new List<Transaction>();
         }
     }
 }
