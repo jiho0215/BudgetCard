@@ -112,7 +112,7 @@ namespace GmailAPI.Converters
             //var targetElement = element.QuerySelectorAll("td").Where(x => x.TextContent.Contains(searchString)).OrderBy(x => x.TextContent.Length).FirstOrDefault();
             //var searchText = "Account ending in";
             //var targetElement = element.QuerySelectorAll("td").Where(x => x.TextContent.Contains(searchText)).OrderBy(x => x.TextContent.Length).FirstOrDefault();
-           
+
 
             //var foundTopTable = false;
             //while (!foundTopTable)
@@ -130,16 +130,18 @@ namespace GmailAPI.Converters
             Console.ReadLine();
             return transactions;
         }
-        
+
         private List<Transaction> ConvertToHtmlObj(string html)
         {
             var htmlDoc = new HtmlDocument();
             htmlDoc.LoadHtml(html);
             var htmlBody = htmlDoc.DocumentNode.SelectSingleNode("//body");
-            foreach(var node in htmlBody.ChildNodes)
-            {
-                Console.WriteLine('c' + node.InnerText);
-            }
+            var accountSummaryForTD = htmlDoc.DocumentNode.SelectSingleNode("//td[contains(text(),'Account summary for')]");
+            var accountSummaryForStirng = accountSummaryForTD.InnerText;
+            
+            var mainTableNode = htmlDoc.DocumentNode.SelectSingleNode("//td[contains(text(), 'Account ending in')]/../../../../../..");
+
+
             return new List<Transaction>();
         }
     }
