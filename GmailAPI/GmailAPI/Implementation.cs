@@ -26,6 +26,7 @@ namespace GmailAPI
             var dailySummaryList = gmailConverter.ConvertToDailySummaryList(htmlList);
 
             //Update to database
+            //create text file database.
         }
     }
 }
