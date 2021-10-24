@@ -109,7 +109,7 @@
                                        </tr>
                                        <tr>
                                           <td>
-                                          *TABLE - A DEPOSIT TRANSACTION
+                                          *TABLE - A Withdrawal TRANSACTION
                                              <table>
                                                 <tr>
                                                    <td> &bull; </td>
@@ -121,7 +121,7 @@
                                        </tr>
                                        <tr>
                                           <td>
-                                          *TABLE - A DEPOSIT TRANSACTION
+                                          *TABLE - A Withdrawal TRANSACTION
                                              <table>
                                                 <tr>
                                                    <td> &bull; </td>
@@ -133,7 +133,7 @@
                                        </tr>
                                        <tr>
                                           <td>
-                                          *TABLE - A DEPOSIT TRANSACTION
+                                          *TABLE - A Withdrawal TRANSACTION
                                              <table>
                                                 <tr>
                                                    <td> &bull; </td>

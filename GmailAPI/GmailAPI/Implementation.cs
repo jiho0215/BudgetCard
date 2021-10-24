@@ -15,18 +15,58 @@ namespace GmailAPI
 {
     public class Implementation
     {
+        private string hostEmailAddress { get; set; }
+        private GmailConverter gmailConverter { get; set; }
+        private IGmailData gmailData { get; set; }
+        private IBucketData bucketData { get; set; }
 
-        public void UpdateUnreadDailySummary(string hostEmailAddress, GmailConverter gmailConverter, IGmailData gmailData)
+        public Implementation(string hostEmailAddress, GmailConverter gmailConverter, IGmailData gmailData, IBucketData bucketData)
+        {
+            this.hostEmailAddress = hostEmailAddress;
+            this.gmailConverter = gmailConverter;
+            this.gmailData = gmailData;
+            this.bucketData = bucketData;
+        }
+
+        public void UpdateUnreadDailySummary()
         {
             //Properties
 
             //Get data from Gmail
             var gmailList = gmailData.GetUnreadDailySummaryListFromGmail(hostEmailAddress);
             var htmlList = gmailList.Select(x => x.Body).ToList();
-            var dailySummaryList = gmailConverter.ConvertToDailySummaryList(htmlList);
+            var dailySummaryList = gmailConverter.ConvertToDailySummaries(htmlList);
 
             //Update to database
-            //create text file database.
+            AddDailySummaryList(dailySummaryList);
+
+
+        }
+        public void AddDailySummaryList(List<DailySummary> dailySummaries)
+        {
+            if (dailySummaries == null || dailySummaries.Count == 0)
+                return;
+
+            dailySummaries.ForEach(dailySummary =>
+            {
+                AddDailySummary(dailySummary);
+            });
+        }
+        public void AddDailySummary(DailySummary dailySummary)
+        {
+            //account
+            UpsertAccount(dailySummary);
+            //add transactions
+
+        }
+        public void UpsertAccount(DailySummary dailySummary)
+        {
+            var account = new Account()
+            {
+                AccountNumber = dailySummary.EndingDigits,
+                CurrentBalance = dailySummary.EndOfDayBalance
+            };
+            bucketData.GetAccountByAccountNumber(account);
         }
     }
 }

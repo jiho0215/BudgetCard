@@ -17,12 +17,15 @@ namespace GmailAPI
     {
         static void Main(string[] args)
         {
-            var implementation = new Implementation();
+            
             var gmailConverter = new GmailConverter();
             var hostEmailAddress = Convert.ToString(ConfigurationManager.AppSettings["HostAddress"]);
             //var gmailData = new GmailData();
             var gmailData = new GmailDataMock();
-            implementation.UpdateUnreadDailySummary(hostEmailAddress, gmailConverter, gmailData);
+            var bucketData = new BucketData();
+            var implementation = new Implementation(hostEmailAddress, gmailConverter, gmailData, bucketData);
+
+            implementation.UpdateUnreadDailySummary();
         }
     }
 }
