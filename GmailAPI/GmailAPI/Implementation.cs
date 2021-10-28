@@ -66,7 +66,7 @@ namespace GmailAPI
                 AccountNumber = dailySummary.EndingDigits,
                 CurrentBalance = dailySummary.EndOfDayBalance
             };
-            bucketData.GetAccountByAccountNumber(account);
+            var existingAcount = bucketData.GetAccountByAccountNumber(account);
         }
     }
 }

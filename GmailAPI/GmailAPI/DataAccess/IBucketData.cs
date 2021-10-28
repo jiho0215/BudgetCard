@@ -9,8 +9,8 @@ namespace GmailAPI.DataAccess
 {
     public interface IBucketData
     {
-        BaseResponse GetAccountByAccountNumber(Account account);
-        BaseResponse GetBucket(Account account);
+        Account GetAccountByAccountNumber(Account inputAccount);
+        Bucket GetBucket(Bucket inputBucket);
         BaseResponse GetTransaction(Account account);
         BaseResponse AddAccount(Account account);
         BaseResponse AddBucket(Account account);

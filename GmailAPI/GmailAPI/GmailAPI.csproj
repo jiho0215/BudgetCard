@@ -101,6 +101,7 @@
   <ItemGroup>
     <Compile Include="APIHelper\Gmail.cs" />
     <Compile Include="APIHelper\GmailHelper.cs" />
+    <Compile Include="Converters\BucketDataConverter.cs" />
     <Compile Include="Converters\GmailConverter.cs" />
     <Compile Include="DataAccess\BucketData.cs" />
     <Compile Include="DataAccess\GmailData.cs" />
