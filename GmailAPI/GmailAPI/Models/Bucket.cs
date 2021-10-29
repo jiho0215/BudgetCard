@@ -15,5 +15,6 @@ namespace GmailAPI.Models
         public float Balance { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+        public bool DeleteFlag { get; set; }
     }
 }

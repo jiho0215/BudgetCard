@@ -10,6 +10,7 @@ namespace GmailAPI.Models
     {
         public int? AccountId { get; set; }
         public float CurrentBalance { get; set; }
-        public string AccountNumber { get; set; }
+        public string LastFourDigits { get; set; }
+        public bool DeleteFlag { get; set; }
     }
 }

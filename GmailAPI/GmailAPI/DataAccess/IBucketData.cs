@@ -11,15 +11,15 @@ namespace GmailAPI.DataAccess
     {
         Account GetAccountByAccountNumber(Account inputAccount);
         Bucket GetBucket(Bucket inputBucket);
-        BaseResponse GetTransaction(Account account);
+        Transaction GetTransaction(Transaction account);
         BaseResponse AddAccount(Account account);
-        BaseResponse AddBucket(Account account);
-        BaseResponse AddTransaction(Account account);
+        BaseResponse AddBucket(Bucket bucket);
+        BaseResponse AddTransaction(Transaction account);
         BaseResponse UpdateAccount(Account account);
-        BaseResponse UpdateBucket(Account account);
-        BaseResponse UpdateTransaction(Account account);
+        BaseResponse UpdateBucket(Bucket account);
+        BaseResponse UpdateTransaction(Transaction account);
         BaseResponse SoftDeleteAccount(Account account);
-        BaseResponse SoftDeleteBucket(Account account);
-        BaseResponse SoftDeleteTransaction(Account account);
+        BaseResponse SoftDeleteBucket(Bucket account);
+        BaseResponse SoftDeleteTransaction(Transaction account);
     }
 }

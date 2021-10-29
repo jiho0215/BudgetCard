@@ -40,6 +40,8 @@ namespace GmailAPI
             //Update to database
             AddDailySummaryList(dailySummaryList);
 
+            Console.WriteLine("Done");
+            Console.ReadLine();
 
         }
         public void AddDailySummaryList(List<DailySummary> dailySummaries)
@@ -57,16 +59,60 @@ namespace GmailAPI
             //account
             UpsertAccount(dailySummary);
             //add transactions
+            AddTransactions(dailySummary);
+
+        }
+        public void AddTransactions(DailySummary dailySummary)
+        {
+            dailySummary.DepositList.ForEach(deposit =>
+            {
+                AddTransaction(new Transaction()
+                {
+                    Amount = deposit.Amount,
+                    DateTime = deposit.DateTime,
+                    Description = deposit.Description,
+                    Type = "Deposit"
+                });
+            });
+            dailySummary.WithdrawalList.ForEach(withdrawal =>
+            {
+                AddTransaction(new Transaction()
+                {
+                    Amount = withdrawal.Amount,
+                    DateTime = withdrawal.DateTime,
+                    Description = withdrawal.Description,
+                    Type = "Withdrawal"
+                });
+            });
+        }
+
+        public void AddTransaction(Transaction transaction)
+        {
+            bucketData.AddTransaction(transaction);
+        }
+
+        public void AddAccountIfNotExist(DailySummary dailySummary)
+        {
 
         }
         public void UpsertAccount(DailySummary dailySummary)
         {
-            var account = new Account()
+            var account = bucketData.GetAccountByAccountNumber(new Account() { LastFourDigits = dailySummary.EndingDigits });
+            if (account == null || account.AccountId == null)
             {
-                AccountNumber = dailySummary.EndingDigits,
-                CurrentBalance = dailySummary.EndOfDayBalance
-            };
-            var existingAcount = bucketData.GetAccountByAccountNumber(account);
+                bucketData.AddAccount(
+                    new Account()
+                    {
+                        LastFourDigits = dailySummary.EndingDigits,
+                        CurrentBalance = dailySummary.EndOfDayBalance
+                    });
+            }
+            else
+            {
+                account.CurrentBalance = dailySummary.EndOfDayBalance;
+                account.LastFourDigits = dailySummary.EndingDigits;
+                bucketData.UpdateAccount(account);
+            }
         }
     }
 }

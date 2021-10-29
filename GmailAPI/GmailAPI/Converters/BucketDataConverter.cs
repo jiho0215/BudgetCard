@@ -18,6 +18,7 @@ namespace GmailAPI.Converters
                 var bucket = new Bucket();
 
                 Int32.TryParse(myReader["Id"].ToString(), out var id);
+                bucket.BucketId = id;
                 float.TryParse(myReader["TargetAmount"].ToString(), out var targetAmount);
                 bucket.TargetAmount = targetAmount;
                 float.TryParse(myReader["balance"].ToString(), out var balance);
@@ -47,13 +48,40 @@ namespace GmailAPI.Converters
                 returnAccount.AccountId = id;
                 float.TryParse(myReader["CurrentBalance"].ToString(), out var currentBalance);
                 returnAccount.CurrentBalance = currentBalance;
-                returnAccount.AccountNumber = myReader["Accountnumber"].ToString();
+                returnAccount.LastFourDigits = myReader["Accountnumber"].ToString();
                 if (returnAccount.AccountId != null && returnAccount.AccountId > 0)
                 {
                     returnAccountList.Add(returnAccount);
                 }
             }
             return returnAccountList;
+        }
+
+        public List<Transaction> ConvertToTransactionList(SQLiteDataReader myReader)
+        {
+            var returnTransactionList = new List<Transaction>();
+            while (myReader.Read())
+            {
+                var transaction = new Transaction();
+
+                Int32.TryParse(myReader["Id"].ToString(), out var id);
+                transaction.TransactionId = id;
+                Int32.TryParse(myReader["BucketId"].ToString(), out var bucketId);
+                transaction.BucketId = bucketId;
+                float.TryParse(myReader["Amount"].ToString(), out var amount);
+                transaction.Amount = amount;
+                transaction.Type = myReader["type"].ToString();
+                transaction.Description = myReader["description"].ToString();
+
+                DateTime.TryParse(myReader["Date"].ToString(), out var date);
+                DateTime.TryParse(myReader["Time"].ToString(), out var time);
+                transaction.DateTime = date.Date.Add(time.TimeOfDay);
+                if (transaction.TransactionId != null && transaction.TransactionId > 0)
+                {
+                    returnTransactionList.Add(transaction);
+                }
+            }
+            return returnTransactionList;
         }
     }
 }

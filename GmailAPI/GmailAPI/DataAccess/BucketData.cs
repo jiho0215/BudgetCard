@@ -24,7 +24,8 @@ namespace GmailAPI.DataAccess
 
                 using (SQLiteCommand selectCMD = connection.CreateCommand())
                 {
-                    selectCMD.CommandText = "INSERT INTO Account (accountnumber, currentbalance) values('" + inputAccount.AccountNumber + "', '" + inputAccount.CurrentBalance + "')";
+                    selectCMD.CommandText = "INSERT INTO Account (accountnumber, currentbalance) values('" 
+                        + inputAccount.LastFourDigits + "', '" + inputAccount.CurrentBalance + "')";
                     selectCMD.CommandType = CommandType.Text;
                     SQLiteDataReader myReader = selectCMD.ExecuteReader();
                 }
@@ -43,7 +44,8 @@ namespace GmailAPI.DataAccess
 
                 using (SQLiteCommand selectCMD = connection.CreateCommand())
                 {
-                    selectCMD.CommandText = "SELECT id, currentbalance, accountnumber FROM Account where accountnumber = '" + inputAccount.AccountNumber + '\'';
+                    selectCMD.CommandText = "SELECT id, currentbalance, accountnumber FROM Account where accountnumber = '" 
+                        + inputAccount.LastFourDigits + '\'';
                     selectCMD.CommandType = CommandType.Text;
                     SQLiteDataReader myReader = selectCMD.ExecuteReader();
                     if (myReader.HasRows)
@@ -76,9 +78,30 @@ namespace GmailAPI.DataAccess
 
         //public List<Account> GetAccountsByBucket()
 
-        public BaseResponse AddBucket(Account account)
+        public BaseResponse AddBucket(Bucket inputBucket)
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse();
+            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+            {
+                connection.Open();
+                using (SQLiteCommand selectCMD = connection.CreateCommand())
+                {
+                    selectCMD.CommandText = "INSERT INTO Bucket " +
+                        "(targetamount, description, type, balance, startdate, enddate) " +
+                        "values('" +
+                        inputBucket.TargetAmount + "', '" +
+                        inputBucket.Description + "', '" +
+                        inputBucket.Type + "', '" +
+                        inputBucket.Balance + "', '" +
+                        inputBucket.StartDate + "', '" +
+                        inputBucket.EndDate +
+                        "')";
+                    selectCMD.CommandType = CommandType.Text;
+                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
+                }
+            }
+            response.IsSuccess = true;
+            return response;
         }
 
         public List<Bucket> GetAllBuckets()
@@ -111,7 +134,7 @@ namespace GmailAPI.DataAccess
 
                 using (SQLiteCommand selectCMD = connection.CreateCommand())
                 {
-                    selectCMD.CommandText = "SELECT id, currentbalance, accountnumber FROM Account where accountnumber = '" + inputAccount.AccountNumber + '\'';
+                    selectCMD.CommandText = "SELECT id, targetAmount, description, type, balance, startdate, enddate FROM Bucket where bucketid =" + bucket.BucketId;
                     selectCMD.CommandType = CommandType.Text;
                     SQLiteDataReader myReader = selectCMD.ExecuteReader();
                     if (myReader.HasRows)
@@ -124,45 +147,181 @@ namespace GmailAPI.DataAccess
             return returnBucket;
         }
 
-        public BaseResponse GetTransaction(Account account)
+        public Transaction GetTransaction(Transaction transaction)
         {
-            throw new NotImplementedException();
+            var returnTransaction = new Transaction();
+            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+            {
+                connection.Open();
+
+                using (SQLiteCommand selectCMD = connection.CreateCommand())
+                {
+                    selectCMD.CommandText = "SELECT id, targetAmount, description, type, balance, startdate, enddate from Trans where Id =" + transaction.TransactionId;
+                    selectCMD.CommandType = CommandType.Text;
+                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
+                    if (myReader.HasRows)
+                    {
+                        var convertedTransactionList = bucketDataConverter.ConvertToTransactionList(myReader);
+                        returnTransaction = convertedTransactionList?[0];
+                    }
+                }
+            }
+            return returnTransaction;
         }
 
 
-        public BaseResponse AddTransaction(Account account)
+        public BaseResponse AddTransaction(Transaction inputTransaction)
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse();
+            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+            {
+                connection.Open();
+                using (SQLiteCommand selectCMD = connection.CreateCommand())
+                {
+                    selectCMD.CommandText = "INSERT INTO Trans " +
+                        "(datetime, amount, type, description, bucketid) " +
+                        "values('" +
+                        inputTransaction.DateTime.ToString("yyyy/MM/dd hh:mm") + "', '" +
+                        //inputTransaction.DateTime.TimeOfDay + "', '" +
+                        inputTransaction.Amount + "', '" +
+                        inputTransaction.Type + "', '" +
+                        inputTransaction.Description + "', '" +
+                        inputTransaction.BucketId +
+                        "')";
+                    selectCMD.CommandType = CommandType.Text;
+                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
+                }
+            }
+            response.IsSuccess = true;
+            return response;
         }
 
-        public BaseResponse SoftDeleteAccount(Account account)
+        public BaseResponse SoftDeleteAccount(Account inputAccount)
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse();
+            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+            {
+                connection.Open();
+                using (SQLiteCommand selectCMD = connection.CreateCommand())
+                {
+                    selectCMD.CommandText = "Update Account " +
+                        " set DeleteFlag = 1 " +
+                        " where id = " + inputAccount.AccountId;
+                    selectCMD.CommandType = CommandType.Text;
+                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
+                }
+            }
+            response.IsSuccess = true;
+            return response;
         }
 
-        public BaseResponse SoftDeleteBucket(Account account)
+        public BaseResponse SoftDeleteBucket(Bucket inputBucket)
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse();
+            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+            {
+                connection.Open();
+                using (SQLiteCommand selectCMD = connection.CreateCommand())
+                {
+                    selectCMD.CommandText = "Update Bucket" +
+                        " set DeleteFlag = 1 " +
+                        " where id = " + inputBucket.BucketId;
+                    selectCMD.CommandType = CommandType.Text;
+                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
+                }
+            }
+            response.IsSuccess = true;
+            return response;
         }
 
-        public BaseResponse SoftDeleteTransaction(Account account)
+        public BaseResponse SoftDeleteTransaction(Transaction transaction)
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse();
+            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+            {
+                connection.Open();
+                using (SQLiteCommand selectCMD = connection.CreateCommand())
+                {
+                    selectCMD.CommandText = "Update Trans" +
+                        " set DeleteFlag = 1 " +
+                        " where id = " + transaction.TransactionId;
+                    selectCMD.CommandType = CommandType.Text;
+                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
+                }
+            }
+            response.IsSuccess = true;
+            return response;
         }
 
         public BaseResponse UpdateAccount(Account account)
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse();
+            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+            {
+                connection.Open();
+                using (SQLiteCommand selectCMD = connection.CreateCommand())
+                {
+                    selectCMD.CommandText = "Update Account " +
+                        " set DeleteFlag = " + (account.DeleteFlag == true ? 1 : 0) +
+                        ", currentbalance = " + account.CurrentBalance +
+                        //", accountnumber = " + account.LastFourDigits +
+                        " where id = " + account.AccountId;
+                    selectCMD.CommandType = CommandType.Text;
+                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
+                }
+            }
+            response.IsSuccess = true;
+            return response;
         }
 
-        public BaseResponse UpdateBucket(Account account)
+        public BaseResponse UpdateBucket(Bucket bucket)
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse();
+            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+            {
+                connection.Open();
+                using (SQLiteCommand selectCMD = connection.CreateCommand())
+                {
+                    selectCMD.CommandText = "Update Bucket" +
+                        " set DeleteFlag = " + bucket.DeleteFlag +
+                        ", targetamount = " + bucket.TargetAmount +
+                        ", description = " + bucket.Description +
+                        ", type = " + bucket.Type +
+                        ", balance = " + bucket.Balance +
+                        ", startdate = " + bucket.StartDate +
+                        ", enddate = " + bucket.EndDate +                    
+                        " where id = " + bucket.BucketId;
+                    selectCMD.CommandType = CommandType.Text;
+                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
+                }
+            }
+            response.IsSuccess = true;
+            return response;
         }
 
-        public BaseResponse UpdateTransaction(Account account)
+        public BaseResponse UpdateTransaction(Transaction transaction)
         {
-            throw new NotImplementedException();
+            var response = new BaseResponse();
+            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+            {
+                connection.Open();
+                using (SQLiteCommand selectCMD = connection.CreateCommand())
+                {
+                    selectCMD.CommandText = "Update Trans" +
+                         " set DeleteFlag = " + transaction.DeleteFlag +
+                         ", description = " + transaction.Description +
+                         ", amount = " + transaction.Amount +
+                         ", datetime = " + transaction.DateTime.ToString("yyyy/MM/dd hh:mm") +
+                         //", time = " + transaction.DateTime.TimeOfDay +
+                         ", type = " + transaction.Type +
+                         ", bucketid = " + transaction.BucketId +
+                         " where id = " + transaction.TransactionId;
+                    selectCMD.CommandType = CommandType.Text;
+                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
+                }
+            }
+            response.IsSuccess = true;
+            return response;
         }
     }
 }
