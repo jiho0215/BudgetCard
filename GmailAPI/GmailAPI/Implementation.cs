@@ -56,20 +56,40 @@ namespace GmailAPI
         }
         public void AddDailySummary(DailySummary dailySummary)
         {
+            //validate account snapshot
+            var accountSnapshotExist = true;
+
+            var snapshot = GetAccountSnapshot(dailySummary);
+            accountSnapshotExist = snapshot?.AccountSnapshotId > -1;
+
+            if (accountSnapshotExist)
+            {
+                return;
+            }
             //account
             UpsertAccount(dailySummary);
             //add transactions
             AddTransactions(dailySummary);
-
+            //add account snapshot
+            AddAccountSnapshot(dailySummary);
+        }
+        public AccountSnapshot GetAccountSnapshot(DailySummary dailySummary)
+        {
+            return bucketData.GetAccountSnapshot(dailySummary);
+        }
+        public void AddAccountSnapshot(DailySummary dailySummary)
+        {
+            bucketData.AddAccountSnapshot(dailySummary);
         }
         public void AddTransactions(DailySummary dailySummary)
         {
+            var transactionDate = dailySummary.Date;
             dailySummary.DepositList.ForEach(deposit =>
             {
                 AddTransaction(new Transaction()
                 {
                     Amount = deposit.Amount,
-                    DateTime = deposit.DateTime,
+                    DateTime = transactionDate,
                     Description = deposit.Description,
                     Type = "Deposit"
                 });
@@ -79,7 +99,7 @@ namespace GmailAPI
                 AddTransaction(new Transaction()
                 {
                     Amount = withdrawal.Amount,
-                    DateTime = withdrawal.DateTime,
+                    DateTime = transactionDate,
                     Description = withdrawal.Description,
                     Type = "Withdrawal"
                 });
@@ -91,10 +111,6 @@ namespace GmailAPI
             bucketData.AddTransaction(transaction);
         }
 
-        public void AddAccountIfNotExist(DailySummary dailySummary)
-        {
-
-        }
         public void UpsertAccount(DailySummary dailySummary)
         {
             var account = bucketData.GetAccountByAccountNumber(new Account() { LastFourDigits = dailySummary.EndingDigits });

@@ -29,7 +29,7 @@ namespace GmailAPI.Converters
                 bucket.StartDate = startDate;
                 DateTime.TryParse(myReader["EndDate"].ToString(), out var endDate);
                 bucket.EndDate = endDate;
-                if (bucket.BucketId != null && bucket.BucketId > 0)
+                if (bucket.BucketId != null && bucket.BucketId > -1)
                 {
                     returnBucketList.Add(bucket);
                 }
@@ -49,7 +49,7 @@ namespace GmailAPI.Converters
                 float.TryParse(myReader["CurrentBalance"].ToString(), out var currentBalance);
                 returnAccount.CurrentBalance = currentBalance;
                 returnAccount.LastFourDigits = myReader["Accountnumber"].ToString();
-                if (returnAccount.AccountId != null && returnAccount.AccountId > 0)
+                if (returnAccount.AccountId != null && returnAccount.AccountId > -1)
                 {
                     returnAccountList.Add(returnAccount);
                 }
@@ -73,15 +73,41 @@ namespace GmailAPI.Converters
                 transaction.Type = myReader["type"].ToString();
                 transaction.Description = myReader["description"].ToString();
 
-                DateTime.TryParse(myReader["Date"].ToString(), out var date);
-                DateTime.TryParse(myReader["Time"].ToString(), out var time);
-                transaction.DateTime = date.Date.Add(time.TimeOfDay);
-                if (transaction.TransactionId != null && transaction.TransactionId > 0)
+                DateTime.TryParse(myReader["Datetime"].ToString(), out var datetime);
+                transaction.DateTime = datetime;
+                if (transaction.TransactionId != null && transaction.TransactionId > -1)
                 {
                     returnTransactionList.Add(transaction);
                 }
             }
             return returnTransactionList;
+        }
+
+        public List<AccountSnapshot> ConvertToAccountSnapthotList(SQLiteDataReader myReader)
+        {
+            var returnAccountSnapshotList = new List<AccountSnapshot>();
+            while (myReader.Read())
+            {
+                var accountSnapshot = new AccountSnapshot();
+
+                Int32.TryParse(myReader["Id"].ToString(), out var id);
+                accountSnapshot.AccountSnapshotId = id;
+                Int32.TryParse(myReader["accountid"].ToString(), out var accountId);
+                accountSnapshot.AccountId = accountId;
+                float.TryParse(myReader["CurrentBalance"].ToString(), out var currentBalance);
+                accountSnapshot.CurrentBalance = currentBalance;
+                float.TryParse(myReader["TotalDeposit"].ToString(), out var totalDeposit);
+                accountSnapshot.TotalDeposit = totalDeposit;
+                float.TryParse(myReader["TotalWithdrawal"].ToString(), out var totalWithdrawal);
+                accountSnapshot.TotalWithdrawal = totalWithdrawal;
+                DateTime.TryParse(myReader["DateTime"].ToString(), out var datetime);
+                accountSnapshot.DateTime = datetime;
+                if (accountSnapshot.AccountSnapshotId != null && accountSnapshot.AccountSnapshotId > -1)
+                {
+                    returnAccountSnapshotList.Add(accountSnapshot);
+                }
+            }
+            return returnAccountSnapshotList;
         }
     }
 }

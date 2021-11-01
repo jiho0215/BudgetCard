@@ -111,6 +111,7 @@
     <Compile Include="DatabaseConfig.cs" />
     <Compile Include="Implementation.cs" />
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\AccountSnapshot.cs" />
     <Compile Include="Models\BaseResponse.cs" />
     <Compile Include="Models\Bucket.cs" />
     <Compile Include="Models\DailySummary.cs" />
