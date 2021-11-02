@@ -331,104 +331,104 @@ namespace GmailAPI.DataAccess
         }
         #endregion
 
-        #region AccountSnapshot
-        public AccountSnapshot GetAccountSnapshot(DailySummary dailySummary)
-        {
-            var returnAccountSnapshot = new AccountSnapshot();
-            var date = dailySummary.Date;
-            var endingDigits = dailySummary.EndingDigits;
-            var account = GetAccountByAccountNumber(new Account() { LastFourDigits = endingDigits });
+        //#region AccountSnapshot
+        ////public AccountSnapshot GetAccountSnapshot(DailySummary dailySummary)
+        ////{
+        ////    var returnAccountSnapshot = new AccountSnapshot();
+        ////    var date = dailySummary.Date;
+        ////    var endingDigits = dailySummary.EndingDigits;
+        ////    var account = GetAccountByAccountNumber(new Account() { LastFourDigits = endingDigits });
 
-            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
-            {
-                connection.Open();
+        ////    using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+        ////    {
+        ////        connection.Open();
 
-                using (SQLiteCommand selectCMD = connection.CreateCommand())
-                {
-                    selectCMD.CommandText = "SELECT id, datetime, totaldeposit, totalwithdrawal, currentbalance, accountid from AccountSnapshot where AccountId = " + account.AccountId + " and datetime = '" + date.ToString("yyyy/MM/dd hh:mm") + "';";
-                    selectCMD.CommandType = CommandType.Text;
-                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
-                    if (myReader.HasRows)
-                    {
-                        var convertedAccountSnapshotList = bucketDataConverter.ConvertToAccountSnapthotList(myReader);
-                        returnAccountSnapshot = convertedAccountSnapshotList?[0];
-                    }
-                }
-            }
-            return returnAccountSnapshot;
-        }
+        ////        using (SQLiteCommand selectCMD = connection.CreateCommand())
+        ////        {
+        ////            selectCMD.CommandText = "SELECT id, datetime, totaldeposit, totalwithdrawal, currentbalance, accountid from AccountSnapshot where AccountId = " + account.AccountId + " and datetime = '" + date.ToString("yyyy/MM/dd hh:mm") + "';";
+        ////            selectCMD.CommandType = CommandType.Text;
+        ////            SQLiteDataReader myReader = selectCMD.ExecuteReader();
+        ////            if (myReader.HasRows)
+        ////            {
+        ////                var convertedAccountSnapshotList = bucketDataConverter.ConvertToAccountSnapthotList(myReader);
+        ////                returnAccountSnapshot = convertedAccountSnapshotList?[0];
+        ////            }
+        ////        }
+        ////    }
+        ////    return returnAccountSnapshot;
+        ////}
 
 
-        public BaseResponse AddAccountSnapshot(DailySummary dailySummary)
-        {
-            var response = new BaseResponse();
-            var account = GetAccountByAccountNumber(new Account() { LastFourDigits = dailySummary.EndingDigits });
-            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
-            {
-                connection.Open();
-                using (SQLiteCommand selectCMD = connection.CreateCommand())
-                {
-                    selectCMD.CommandText = "INSERT INTO AccountSnapshot " +
-                        "(datetime, totalDeposit, totalWithdrawal, currentBalance, AccountId) " +
-                        "values('" +
-                        dailySummary.Date.ToString("yyyy/MM/dd hh:mm") + "', '" +
-                        dailySummary.TotalDeposits + "', '" +
-                        dailySummary.TotalWithdrawls + "', '" +
-                        dailySummary.EndOfDayBalance + "', '" +
-                        account.AccountId +
-                        "')";
-                    selectCMD.CommandType = CommandType.Text;
-                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
-                }
-            }
-            response.IsSuccess = true;
-            return response;
-        }
+        ////public BaseResponse AddAccountSnapshot(DailySummary dailySummary)
+        ////{
+        ////    var response = new BaseResponse();
+        ////    var account = GetAccountByAccountNumber(new Account() { LastFourDigits = dailySummary.EndingDigits });
+        ////    using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+        ////    {
+        ////        connection.Open();
+        ////        using (SQLiteCommand selectCMD = connection.CreateCommand())
+        ////        {
+        ////            selectCMD.CommandText = "INSERT INTO AccountSnapshot " +
+        ////                "(datetime, totalDeposit, totalWithdrawal, currentBalance, AccountId) " +
+        ////                "values('" +
+        ////                dailySummary.Date.ToString("yyyy/MM/dd hh:mm") + "', '" +
+        ////                dailySummary.TotalDeposits + "', '" +
+        ////                dailySummary.TotalWithdrawls + "', '" +
+        ////                dailySummary.EndOfDayBalance + "', '" +
+        ////                account.AccountId +
+        ////                "')";
+        ////            selectCMD.CommandType = CommandType.Text;
+        ////            SQLiteDataReader myReader = selectCMD.ExecuteReader();
+        ////        }
+        ////    }
+        ////    response.IsSuccess = true;
+        ////    return response;
+        ////}
 
-        public BaseResponse DeleteAccountSnapshot(DailySummary dailySummary)
-        {
-            var response = new BaseResponse();
-            var account = GetAccountByAccountNumber(new Account() { LastFourDigits = dailySummary.EndingDigits });
-            using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
-            {
-                connection.Open();
-                using (SQLiteCommand selectCMD = connection.CreateCommand())
-                {
-                    selectCMD.CommandText = "Delete AccountSnapshot" +
-                        //" set DeleteFlag = 1 " +
-                        " where id = " + account.AccountId + " and datetime = " + dailySummary.Date.ToString("yyyy/MM/dd hh:mm");
-                    selectCMD.CommandType = CommandType.Text;
-                    SQLiteDataReader myReader = selectCMD.ExecuteReader();
-                }
-            }
-            response.IsSuccess = true;
-            return response;
-        }
+        ////public BaseResponse DeleteAccountSnapshot(DailySummary dailySummary)
+        ////{
+        ////    var response = new BaseResponse();
+        ////    var account = GetAccountByAccountNumber(new Account() { LastFourDigits = dailySummary.EndingDigits });
+        ////    using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+        ////    {
+        ////        connection.Open();
+        ////        using (SQLiteCommand selectCMD = connection.CreateCommand())
+        ////        {
+        ////            selectCMD.CommandText = "Delete AccountSnapshot" +
+        ////                //" set DeleteFlag = 1 " +
+        ////                " where id = " + account.AccountId + " and datetime = " + dailySummary.Date.ToString("yyyy/MM/dd hh:mm");
+        ////            selectCMD.CommandType = CommandType.Text;
+        ////            SQLiteDataReader myReader = selectCMD.ExecuteReader();
+        ////        }
+        ////    }
+        ////    response.IsSuccess = true;
+        ////    return response;
+        ////}
 
-        //public BaseResponse UpdateAccountSnapshot(DailySummary dailySummary)
-        //{
-        //    var response = new BaseResponse();
-        //    using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
-        //    {
-        //        connection.Open();
-        //        using (SQLiteCommand selectCMD = connection.CreateCommand())
-        //        {
-        //            selectCMD.CommandText = "Update Trans" +
-        //                 " set DeleteFlag = " + transaction.DeleteFlag +
-        //                 ", description = " + transaction.Description +
-        //                 ", amount = " + transaction.Amount +
-        //                 ", datetime = " + transaction.DateTime.ToString("yyyy/MM/dd hh:mm") +
-        //                 //", time = " + transaction.DateTime.TimeOfDay +
-        //                 ", type = " + transaction.Type +
-        //                 ", bucketid = " + transaction.BucketId +
-        //                 " where id = " + transaction.TransactionId;
-        //            selectCMD.CommandType = CommandType.Text;
-        //            SQLiteDataReader myReader = selectCMD.ExecuteReader();
-        //        }
-        //    }
-        //    response.IsSuccess = true;
-        //    return response;
-        //}
-        #endregion
+        ////public BaseResponse UpdateAccountSnapshot(DailySummary dailySummary)
+        ////{
+        ////    var response = new BaseResponse();
+        ////    using (SQLiteConnection connection = new SQLiteConnection(myDatabase.mySQLiteConnection))
+        ////    {
+        ////        connection.Open();
+        ////        using (SQLiteCommand selectCMD = connection.CreateCommand())
+        ////        {
+        ////            selectCMD.CommandText = "Update Trans" +
+        ////                 " set DeleteFlag = " + transaction.DeleteFlag +
+        ////                 ", description = " + transaction.Description +
+        ////                 ", amount = " + transaction.Amount +
+        ////                 ", datetime = " + transaction.DateTime.ToString("yyyy/MM/dd hh:mm") +
+        ////                 //", time = " + transaction.DateTime.TimeOfDay +
+        ////                 ", type = " + transaction.Type +
+        ////                 ", bucketid = " + transaction.BucketId +
+        ////                 " where id = " + transaction.TransactionId;
+        ////            selectCMD.CommandType = CommandType.Text;
+        ////            SQLiteDataReader myReader = selectCMD.ExecuteReader();
+        ////        }
+        ////    }
+        ////    response.IsSuccess = true;
+        ////    return response;
+        ////}
+        //#endregion
     }
 }

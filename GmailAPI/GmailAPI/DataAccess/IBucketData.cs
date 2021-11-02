@@ -21,8 +21,8 @@ namespace GmailAPI.DataAccess
         BaseResponse SoftDeleteAccount(Account account);
         BaseResponse SoftDeleteBucket(Bucket account);
         BaseResponse SoftDeleteTransaction(Transaction account);
-        BaseResponse AddAccountSnapshot(DailySummary dailySummary);
-        BaseResponse DeleteAccountSnapshot(DailySummary dailySummary);
-        AccountSnapshot GetAccountSnapshot(DailySummary dailySummary);
+        //BaseResponse AddAccountSnapshot(DailySummary dailySummary);
+        //BaseResponse DeleteAccountSnapshot(DailySummary dailySummary);
+        //AccountSnapshot GetAccountSnapshot(DailySummary dailySummary);
     }
 }
