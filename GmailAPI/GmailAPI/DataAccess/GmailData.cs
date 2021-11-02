@@ -27,10 +27,10 @@ namespace GmailAPI.DataAccess
             ListRequest.LabelIds = new List<string>()
             {
                 "INBOX"
-                //TODO: remove uncomment out, "UNREAD"
+                , "UNREAD"
             };
             ListRequest.IncludeSpamTrash = false;
-            var query = "after:" + DateTime.Now.AddDays(-3).ToString("yyyy/MM/dd") + " from:chase \"daily summary\"";
+            var query = "after:" + DateTime.Now.AddDays(-10).ToString("yyyy/MM/dd") + " from:chase \"daily summary\"";
             ListRequest.Q = query;
 
             //GET EMAILS

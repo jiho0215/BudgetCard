@@ -110,8 +110,8 @@ namespace GmailAPI.DataAccess
                     selectCMD.CommandText = "Update Account " +
                         " set DeleteFlag = " + (account.DeleteFlag == true ? 1 : 0) +
                         ", currentbalance = " + account.CurrentBalance +
-                        //", accountnumber = " + account.LastFourDigits +
-                        " where id = " + account.AccountId;
+                        ", lastupdateddatetime = '" + account.DateTime.ToString("yyyy/MM/dd hh:mm") +
+                        "' where id = " + account.AccountId;
                     selectCMD.CommandType = CommandType.Text;
                     SQLiteDataReader myReader = selectCMD.ExecuteReader();
                 }

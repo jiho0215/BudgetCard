@@ -49,7 +49,7 @@ namespace GmailAPI
             if (dailySummaries == null || dailySummaries.Count == 0)
                 return;
 
-            dailySummaries.ForEach(dailySummary =>
+            dailySummaries.OrderBy(x => x.Date).ToList().ForEach(dailySummary =>
             {
                 AddDailySummary(dailySummary);
             });
@@ -114,13 +114,15 @@ namespace GmailAPI
                     new Account()
                     {
                         LastFourDigits = dailySummary.EndingDigits,
-                        CurrentBalance = dailySummary.EndOfDayBalance
+                        CurrentBalance = dailySummary.EndOfDayBalance,
+                        DateTime = dailySummary.Date
                     });
             }
             else
             {
                 account.CurrentBalance = dailySummary.EndOfDayBalance;
                 account.LastFourDigits = dailySummary.EndingDigits;
+                account.DateTime = dailySummary.Date;
                 bucketData.UpdateAccount(account);
             }
         }
