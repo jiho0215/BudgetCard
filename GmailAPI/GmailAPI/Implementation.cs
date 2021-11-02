@@ -57,15 +57,9 @@ namespace GmailAPI
         public void AddDailySummary(DailySummary dailySummary)
         {
             //validate account snapshot
-            //var accountSnapshotExist = true;
+            //How to validate? 
+            //Implement some validation in the future. Can't stop performing the same amount of transaction happening.
 
-            //var snapshot = GetAccountSnapshot(dailySummary);
-            //accountSnapshotExist = snapshot?.AccountSnapshotId > -1;
-
-            //if (accountSnapshotExist)
-            //{
-            //    return;
-            //}
             //account
             UpsertAccount(dailySummary);
             //add transactions
