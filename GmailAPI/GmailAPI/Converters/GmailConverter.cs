@@ -2,7 +2,6 @@
 using AngleSharp.Dom;
 using AngleSharp.Html.Parser;
 using GmailAPI.APIHelper;
-using GmailAPI.Models;
 using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
@@ -11,6 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web;
+using BuckitClassLibrary;
 
 namespace GmailAPI.Converters
 {

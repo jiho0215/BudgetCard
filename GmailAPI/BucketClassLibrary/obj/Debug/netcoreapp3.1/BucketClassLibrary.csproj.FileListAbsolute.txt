@@ -1,0 +1,10 @@
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\bin\Debug\netcoreapp3.1\BucketClassLibrary.deps.json
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\bin\Debug\netcoreapp3.1\BucketClassLibrary.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\bin\Debug\netcoreapp3.1\BucketClassLibrary.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\obj\Debug\netcoreapp3.1\BucketClassLibrary.csproj.AssemblyReference.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\obj\Debug\netcoreapp3.1\BucketClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\obj\Debug\netcoreapp3.1\BucketClassLibrary.AssemblyInfoInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\obj\Debug\netcoreapp3.1\BucketClassLibrary.AssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\obj\Debug\netcoreapp3.1\BucketClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\obj\Debug\netcoreapp3.1\BucketClassLibrary.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\GmailAPI\BucketClassLibrary\obj\Debug\netcoreapp3.1\BucketClassLibrary.pdb

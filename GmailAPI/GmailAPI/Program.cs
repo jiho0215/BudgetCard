@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using GmailAPI.APIHelper;
 using GmailAPI.Converters;
 using GmailAPI.DataAccess;
-using GmailAPI.Models;
+using BuckitClassLibrary;
 using Google.Apis.Gmail.v1;
 using Google.Apis.Gmail.v1.Data;
 

@@ -1,10 +1,10 @@
-﻿using GmailAPI.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BuckitClassLibrary;
 
 namespace GmailAPI.Converters
 {
@@ -83,31 +83,31 @@ namespace GmailAPI.Converters
             return returnTransactionList;
         }
 
-        public List<AccountSnapshot> ConvertToAccountSnapthotList(SQLiteDataReader myReader)
-        {
-            var returnAccountSnapshotList = new List<AccountSnapshot>();
-            while (myReader.Read())
-            {
-                var accountSnapshot = new AccountSnapshot();
+        //public List<AccountSnapshot> ConvertToAccountSnapthotList(SQLiteDataReader myReader)
+        //{
+        //    var returnAccountSnapshotList = new List<AccountSnapshot>();
+        //    while (myReader.Read())
+        //    {
+        //        var accountSnapshot = new AccountSnapshot();
 
-                Int32.TryParse(myReader["Id"].ToString(), out var id);
-                accountSnapshot.AccountSnapshotId = id;
-                Int32.TryParse(myReader["accountid"].ToString(), out var accountId);
-                accountSnapshot.AccountId = accountId;
-                float.TryParse(myReader["CurrentBalance"].ToString(), out var currentBalance);
-                accountSnapshot.CurrentBalance = currentBalance;
-                float.TryParse(myReader["TotalDeposit"].ToString(), out var totalDeposit);
-                accountSnapshot.TotalDeposit = totalDeposit;
-                float.TryParse(myReader["TotalWithdrawal"].ToString(), out var totalWithdrawal);
-                accountSnapshot.TotalWithdrawal = totalWithdrawal;
-                DateTime.TryParse(myReader["DateTime"].ToString(), out var datetime);
-                accountSnapshot.DateTime = datetime;
-                if (accountSnapshot.AccountSnapshotId != null && accountSnapshot.AccountSnapshotId > -1)
-                {
-                    returnAccountSnapshotList.Add(accountSnapshot);
-                }
-            }
-            return returnAccountSnapshotList;
-        }
+        //        Int32.TryParse(myReader["Id"].ToString(), out var id);
+        //        accountSnapshot.AccountSnapshotId = id;
+        //        Int32.TryParse(myReader["accountid"].ToString(), out var accountId);
+        //        accountSnapshot.AccountId = accountId;
+        //        float.TryParse(myReader["CurrentBalance"].ToString(), out var currentBalance);
+        //        accountSnapshot.CurrentBalance = currentBalance;
+        //        float.TryParse(myReader["TotalDeposit"].ToString(), out var totalDeposit);
+        //        accountSnapshot.TotalDeposit = totalDeposit;
+        //        float.TryParse(myReader["TotalWithdrawal"].ToString(), out var totalWithdrawal);
+        //        accountSnapshot.TotalWithdrawal = totalWithdrawal;
+        //        DateTime.TryParse(myReader["DateTime"].ToString(), out var datetime);
+        //        accountSnapshot.DateTime = datetime;
+        //        if (accountSnapshot.AccountSnapshotId != null && accountSnapshot.AccountSnapshotId > -1)
+        //        {
+        //            returnAccountSnapshotList.Add(accountSnapshot);
+        //        }
+        //    }
+        //    return returnAccountSnapshotList;
+        //}
     }
 }
