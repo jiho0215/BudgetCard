@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -17,7 +17,7 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="x-windows-949" />
+      <charset value="windows-1252" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -26,25 +26,31 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="819c39fb-8528-4edc-9254-36ad548e4bb9">
-        <schema name="information_schema" object-types="table, view" />
-        <schema name="pg_catalog" object-types="table, view" />
+        <schema name="pg_catalog" object-types="table, view, function" />
         <schema name="public" object-types="table, view, sequence, function" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="819c39fb-8528-4edc-9254-36ad548e4bb9">
-      <console name="BucketDBConnection" type="STANDARD" schema="information_schema" session="Main"><![CDATA[--psql --host=bucket-db-server.postgres.database.azure.com --port=5432 --username=bucketdbserveradmin@bucket-db-server --dbname=postgres
+      <console name="BucketDBConnection" type="STANDARD" schema="public" session="Main"><![CDATA[--psql --host=bucket-db-server.postgres.database.azure.com --port=5432 --username=bucketdbserveradmin@bucket-db-server --dbname=bucketdb
+--shell command: display all objects in public schema
+--\dt public.*
+--drop database bucketdb;
+--DROP SCHEMA public CASCADE;
+--CREATE SCHEMA public;
+
 CREATE TABLE "buckit_user" (
 	"buckit_user_id" INTEGER GENERATED ALWAYS AS IDENTITY,
 	"username" TEXT NOT NULL UNIQUE,
 	"first_name" TEXT NOT NULL,
 	"last_name" TEXT NOT NULL,
 	"delete_flag" INTEGER DEFAULT 0,
+	"timestamp" timestamp default current_timestamp,
 	PRIMARY KEY(buckit_user_id)
 );
-
-
+--rollback;
+--select * from buckit_user;
 INSERT INTO buckit_user (first_name, last_name, username)
 VALUES ('Jiho', 'Lee', 'ianjiholee@gmail.com');
 INSERT INTO buckit_user (first_name, last_name, username)
@@ -58,11 +64,14 @@ CREATE TABLE "account" (
 	"institution_name" TEXT NOT NULL,
 	"delete_flag" INTEGER DEFAULT 0,
 	"last_updated_datetime"	TEXT,
+	"timestamp" timestamp default current_timestamp,
 	PRIMARY KEY(account_id),
     CONSTRAINT fk_buckit_user
       FOREIGN KEY(buckit_user_id) 
 	  REFERENCES buckit_user(buckit_user_id)
 );
+
+
 
 --ALTER TABLE account ADD institution_name TEXT NOT NULL;
 
@@ -82,6 +91,7 @@ CREATE TABLE "account_transaction" (
 	"amount" REAL NOT NULL DEFAULT 0,
 	"type"	TEXT NOT NULL,
 	"description"	TEXT,
+	"timestamp" timestamp default current_timestamp,
 	PRIMARY KEY(account_transaction_id),
     CONSTRAINT fk_account
       FOREIGN KEY(account_id) 
@@ -91,6 +101,7 @@ CREATE TABLE "account_transaction" (
 --ALTER TABLE account_transaction ADD type TEXT NOT NULL;
 INSERT INTO account_transaction (account_id, institute_transaction_id, amount, datetime, type, description)
 VALUES ('1', '1234', 100.21, '2021/11/11 10:10:00', 'Credit', 'test');
+--select * from account_transaction;
 
 CREATE TABLE "bucket" (
 	"bucket_id"	INT GENERATED ALWAYS AS IDENTITY,
@@ -101,20 +112,24 @@ CREATE TABLE "bucket" (
 	"start_date" TEXT,
 	"end_date" TEXT,
 	"delete_flag" INTEGER DEFAULT 0,
+	"timestamp" timestamp default current_timestamp,
 	PRIMARY KEY(bucket_id)
 );
 
 --ALTER TABLE bucket DROP COLUMN start_date;
 --ALTER TABLE bucket ADD start_date TEXT;
 --DROP TABLE bucket
-INSERT INTO bucket (target_amount, description, type, balance, start_Date, end_date)
+INSERT INTO bucket (target_amount, description, type, balance, start_date, end_date)
 VALUES ('1000', 'TV', 'Saving', 0.00, '2021/11/11', null);
+
+--select * from bucket;
 
 CREATE TABLE "bucket_transaction" (
 	"bucket_transaction_id"	INT GENERATED ALWAYS AS IDENTITY,
 	"bucket_id"	INT,
 	"created_by" INT,
 	"description" TEXT NOT NULL,
+	"timestamp" timestamp default current_timestamp,
     PRIMARY KEY(bucket_transaction_id),
     CONSTRAINT fk_bucket
       FOREIGN KEY(bucket_id) 
@@ -124,8 +139,10 @@ CREATE TABLE "bucket_transaction" (
 	  REFERENCES buckit_user(buckit_user_id)
 );
 
---DROP SCHEMA public CASCADE;
---CREATE SCHEMA public;]]></console>
+INSERT INTO bucket_transaction (bucket_id, created_by, description)
+VALUES (1, 1, 'this is test bucket transaction');
+
+--select * from bucket_transaction;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -162,7 +179,9 @@ CREATE TABLE "bucket_transaction" (
     <filters />
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
+    <recently-used-interfaces>
+      <mapping database-type="POSTGRES" interface-id="DEFAULT" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
@@ -179,13 +198,13 @@ CREATE TABLE "bucket_transaction" (
           <url-type value="DATABASE" />
           <host value="bucket-db-server.postgres.database.azure.com" />
           <port value="5432" />
-          <database value="bucketdb" />
+          <database value="buckitdb" />
           <type value="USER_PASSWORD" />
           <user value="bucketdbserveradmin@bucket-db-server" />
           <deprecated-pwd value="SGFoczEzNTc=" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />
@@ -375,12 +394,19 @@ CREATE TABLE "bucket_transaction" (
           <content-type name="DTD" enabled="true" />
           <content-type name="HTML" enabled="true" />
           <content-type name="XHTML" enabled="true" />
+          <content-type name="CSS" enabled="true" />
           <content-type name="Java" enabled="true" />
           <content-type name="SQL" enabled="true" />
           <content-type name="PL/SQL" enabled="true" />
+          <content-type name="JavaScript" enabled="true" />
           <content-type name="JSON" enabled="true" />
           <content-type name="JSON5" enabled="true" />
+          <content-type name="JSP" enabled="true" />
+          <content-type name="JSPx" enabled="true" />
           <content-type name="Groovy" enabled="true" />
+          <content-type name="FTL" enabled="true" />
+          <content-type name="GSP" enabled="true" />
+          <content-type name="VTL" enabled="true" />
           <content-type name="AIDL" enabled="true" />
           <content-type name="YAML" enabled="true" />
           <content-type name="Manifest" enabled="true" />
