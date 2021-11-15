@@ -14,8 +14,7 @@
         "outputPath": "C:\\Users\\jiho0\\Documents\\GitHub\\BudgetCard\\GmailAPI\\BucketClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\jiho0\\AppData\\Roaming\\NuGet\\NuGet.Config",

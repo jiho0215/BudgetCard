@@ -1,0 +1,8 @@
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit\obj\Debug\net6.0\Buckit.Web.csproj.AssemblyReference.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit\obj\Debug\net6.0\Buckit.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit\obj\Debug\net6.0\Buckit.Web.AssemblyInfoInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit\obj\Debug\net6.0\Buckit.Web.AssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit\obj\Debug\net6.0\Buckit.Web.csproj.CoreCompileInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit\obj\Debug\net6.0\Buckit.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit\obj\Debug\net6.0\Buckit.Web.RazorAssemblyInfo.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit\obj\Debug\net6.0\Buckit.Web.RazorAssemblyInfo.cs

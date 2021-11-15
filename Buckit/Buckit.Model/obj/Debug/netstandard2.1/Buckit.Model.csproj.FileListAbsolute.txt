@@ -1,0 +1,5 @@
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\netstandard2.1\Buckit.Model.csproj.AssemblyReference.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\netstandard2.1\Buckit.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\netstandard2.1\Buckit.Model.AssemblyInfoInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\netstandard2.1\Buckit.Model.AssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\netstandard2.1\Buckit.Model.csproj.CoreCompileInputs.cache
