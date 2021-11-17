@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Buckit.Data.Models
+namespace Buckit.Data
 {
     public partial class BuckitUser
     {

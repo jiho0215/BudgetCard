@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buckit.Web", "Buckit\Buckit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buckit.Model", "Buckit.Model\Buckit.Model.csproj", "{0C9BC220-7D99-4605-B2A6-C34E16D765F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buckit.Data", "Buckit.Data\Buckit.Data.csproj", "{918A3043-87F6-4CDD-9F4F-3A56E0F27C5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buckit.Data", "Buckit.Data\Buckit.Data.csproj", "{918A3043-87F6-4CDD-9F4F-3A56E0F27C5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buckit.API", "Buckit.API\Buckit.API.csproj", "{2E320F84-A24F-49D8-9639-BC6622ED091B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{918A3043-87F6-4CDD-9F4F-3A56E0F27C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{918A3043-87F6-4CDD-9F4F-3A56E0F27C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{918A3043-87F6-4CDD-9F4F-3A56E0F27C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E320F84-A24F-49D8-9639-BC6622ED091B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E320F84-A24F-49D8-9639-BC6622ED091B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E320F84-A24F-49D8-9639-BC6622ED091B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E320F84-A24F-49D8-9639-BC6622ED091B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

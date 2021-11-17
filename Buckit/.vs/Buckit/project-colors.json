@@ -20,7 +20,12 @@
       "ProjectGuid": "918a3043-87f6-4cdd-9f4f-3a56e0f27c5c",
       "DisplayName": "Buckit.Data",
       "ColorIndex": 3
+    },
+    "2e320f84-a24f-49d8-9639-bc6622ed091b": {
+      "ProjectGuid": "2e320f84-a24f-49d8-9639-bc6622ed091b",
+      "DisplayName": "Buckit.API",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

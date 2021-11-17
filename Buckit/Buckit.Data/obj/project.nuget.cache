@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tPcGsFWHy/owA633BScPQbu780PSGcvWHjTFFq8mhvnlD1hAZYK4Jg4VIecek5aGR1H7FJD2y1zuoYZ/Mgh1vQ==",
+  "dgSpecHash": "uqOdm/9kezA1INEC5AKtnkBjZQNb/SplGqsTUXXPyp+pVveFoPLZQXxaV7hKsgjEL2iD3GtG6tFSOB4b/lwlPw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jiho0\\Documents\\GitHub\\BudgetCard\\Buckit\\Buckit.Data\\Buckit.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jiho0\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",
+    "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.12\\microsoft.aspnetcore.cryptography.keyderivation.5.0.12.nupkg.sha512",
+    "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.12\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.12.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
@@ -17,6 +20,8 @@
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.12\\microsoft.extensions.identity.core.5.0.12.nupkg.sha512",
+    "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.identity.stores\\5.0.12\\microsoft.extensions.identity.stores.5.0.12.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
