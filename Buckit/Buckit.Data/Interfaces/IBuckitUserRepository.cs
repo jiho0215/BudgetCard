@@ -7,7 +7,7 @@ namespace Buckit.Data
     public interface IBuckitUserRepository
     {
         Task<int> AddAsync(BuckitUser buckitUser);
-        Task<BuckitUser> GetAsync(int id);
+        BuckitUser? Get(int id);
         Task DeleteAsync(int id);
         Task UpdateAsync(BuckitUser buckitUser);
     }

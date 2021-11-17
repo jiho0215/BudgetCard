@@ -10,31 +10,39 @@ namespace Buckit.Data
     public class BucketRepository : IBucketRepository
     {
         buckitdbContext _context;
-        static readonly int DEFAULT_PICTURE = 0;
 
         public BucketRepository(buckitdbContext dbcontext)
         {
             _context = dbcontext;
         }
 
-        public Task<int> AddAsync(Bucket bucket)
+        public async Task<int> AddAsync(Bucket bucket)
         {
-            throw new NotImplementedException();
+            _context.Buckets.Add(bucket);
+            await _context.SaveChangesAsync();
+            return bucket.BucketId;
         }
 
-        public Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var bucket = await _context.Buckets.FindAsync(id);
+            if (bucket == null)
+            {
+                return;
+            }
+            _context.Buckets.Remove(bucket);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<Bucket> GetAsync(int id)
+        public Bucket? Get(int id)
         {
-            throw new NotImplementedException();
+            return _context.Buckets.FirstOrDefault(x => x.BucketId == id);
         }
 
-        public Task UpdateAsync(Bucket bucket)
+        public async Task UpdateAsync(Bucket bucket)
         {
-            throw new NotImplementedException();
+            _context.Buckets.Update(bucket);
+            await _context.SaveChangesAsync();
         }
     }
 }

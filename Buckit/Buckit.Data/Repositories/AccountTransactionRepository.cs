@@ -1,5 +1,4 @@
-﻿using Buckit.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,31 +9,39 @@ namespace Buckit.Data
     public class AccountTransactionRepository : IAccountTransactionRepository
     {
         buckitdbContext _context;
-        static readonly int DEFAULT_PICTURE = 0;
 
         public AccountTransactionRepository(buckitdbContext dbcontext)
         {
             _context = dbcontext;
         }
 
-        public Task<int> AddAsync(Transaction transaction)
+        public async Task<int> AddAsync(AccountTransaction accountTransaction)
         {
-            throw new NotImplementedException();
+            _context.AccountTransactions.Add(accountTransaction);
+            await _context.SaveChangesAsync();
+            return accountTransaction.AccountTransactionId;
         }
 
-        public Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var accountTransaction = await _context.AccountTransactions.FindAsync(id);
+            if(accountTransaction == null)
+            {
+                return;
+            }
+            _context.AccountTransactions.Remove(accountTransaction);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<Transaction> GetAsync(int id)
+        public AccountTransaction? Get(int id)
         {
-            throw new NotImplementedException();
+            return _context.AccountTransactions.FirstOrDefault(x => x.AccountTransactionId == id);
         }
 
-        public Task UpdateAsync(Transaction transaction)
+        public async Task UpdateAsync(AccountTransaction accountTransaction)
         {
-            throw new NotImplementedException();
+            _context.AccountTransactions.Update(accountTransaction);
+            await _context.SaveChangesAsync();
         }
     }
 }

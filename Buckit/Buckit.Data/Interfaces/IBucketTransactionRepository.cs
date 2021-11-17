@@ -6,9 +6,9 @@ namespace Buckit.Data
 {
     public interface IBucketTransactionRepository
     {
-        Task<int> AddAsync(Transaction transaction);
-        Task<Transaction> GetAsync(int id);
+        Task<int> AddAsync(BucketTransaction bucketTransaction);
+        BucketTransaction? Get(int id);
         Task DeleteAsync(int id);
-        Task UpdateAsync(Transaction transaction);
+        Task UpdateAsync(BucketTransaction bucketTransaction);
     }
 }

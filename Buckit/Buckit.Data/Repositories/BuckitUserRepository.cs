@@ -7,31 +7,39 @@ namespace Buckit.Data
     public class BuckitUserRepository : IBuckitUserRepository
     {
         buckitdbContext _context;
-        static readonly int DEFAULT_PICTURE = 0;
 
         public BuckitUserRepository(buckitdbContext dbcontext)
         {
             _context = dbcontext;
         }
 
-        public Task<int> AddAsync(BuckitUser buckitUser)
+        public async Task<int> AddAsync(BuckitUser buckitUser)
         {
-            throw new NotImplementedException();
+            _context.BuckitUsers.Add(buckitUser);
+            await _context.SaveChangesAsync();
+            return buckitUser.BuckitUserId;
         }
 
-        public Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var buckitUser = await _context.BuckitUsers.FindAsync(id);
+            if (buckitUser == null)
+            {
+                return;
+            }
+            _context.BuckitUsers.Remove(buckitUser);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<BuckitUser> GetAsync(int id)
+        public BuckitUser? Get(int id)
         {
-            throw new NotImplementedException();
+            return _context.BuckitUsers.FirstOrDefault(x => x.BuckitUserId == id);
         }
 
-        public Task UpdateAsync(BuckitUser buckitUser)
+        public async Task UpdateAsync(BuckitUser buckitUser)
         {
-            throw new NotImplementedException();
+            _context.BuckitUsers.Update(buckitUser);
+            await _context.SaveChangesAsync();
         }
     }
 }
