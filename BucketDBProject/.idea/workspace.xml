@@ -2,302 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25cd8993-ab55-42cf-9a32-db5547657578" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/.vs/BuckitClassLibrary/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/Account.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/BaseResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/Bucket.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/BuckitClassLibrary.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/DailySummary.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/Transaction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/bin/Debug/netcoreapp3.1/BuckitClassLibrary.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/bin/Debug/netcoreapp3.1/BuckitClassLibrary.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/bin/Debug/netcoreapp3.1/BuckitClassLibrary.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/BuckitClassLibrary.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/BuckitClassLibrary.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/BuckitClassLibrary.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/BuckitClassLibrary.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/BuckitClassLibrary.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/BuckitClassLibrary.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/BuckitClassLibrary.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/BuckitClassLibrary.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/BuckitClassLibrary.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/BuckitClassLibrary.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/BuckitClassLibrary.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/Debug/netcoreapp3.1/BuckitClassLibrary.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketClassLibrary/BuckitClassLibrary/BuckitClassLibrary/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BucketDBProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/.vs/BucketWebApp/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/.vs/BucketWebApp/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/BucketClassLibrary.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/BucketClassLibrary.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/BucketClassLibrary.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/BucketClassLibrary.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/Debug/netcoreapp3.1/BucketClassLibrary.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/Debug/netcoreapp3.1/BucketClassLibrary.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/Debug/netcoreapp3.1/BucketClassLibrary.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/Debug/netcoreapp3.1/BucketClassLibrary.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/Debug/netcoreapp3.1/BucketClassLibrary.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketClassLibrary/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/BucketWebApp.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/Error.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/Error.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/Index.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/Privacy.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/Privacy.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/Shared/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Pages/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/BucketWebApp.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/BucketWebApp.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/BucketWebApp.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/Debug/netcoreapp3.1/BucketWebApp.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/Debug/netcoreapp3.1/BucketWebApp.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/Debug/netcoreapp3.1/BucketWebApp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/Debug/netcoreapp3.1/BucketWebApp.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/Debug/netcoreapp3.1/BucketWebApp.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/Debug/netcoreapp3.1/BucketWebApp.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/Debug/netcoreapp3.1/BucketWebApp.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/js/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BucketWebApp/BucketWebApp/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/.vs/Budget/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/.vs/Budget/config/applicationhost.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/.vs/Budget/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Budget.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/Error.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/Error.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/Index.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/Privacy.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/Privacy.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/Shared/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Pages/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/Budget.Views.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/Budget.Views.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/Budget.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/Budget.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/Budget.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/Budget.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/Budget.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/Budget.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Budget.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Budget.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Budget.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.RazorCoreGenerate.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.RazorTargetAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.RazorTargetAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.TagHelpers.input.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.TagHelpers.output.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.Views.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.Views.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Budget.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Razor/Pages/Error.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Razor/Pages/Index.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Razor/Pages/Privacy.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_Layout.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_ValidationScriptsPartial.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/apphost.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/staticwebassets/Budget.StaticWebAssets.Manifest.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/Debug/netcoreapp3.1/staticwebassets/Budget.StaticWebAssets.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/js/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/Budget/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/Error.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/Error.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/Index.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/Privacy.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/Privacy.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/Shared/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Pages/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/gmailFeeder.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/Debug/netcoreapp3.1/gmailFeeder.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/Debug/netcoreapp3.1/gmailFeeder.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/Debug/netcoreapp3.1/gmailFeeder.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/Debug/netcoreapp3.1/gmailFeeder.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/Debug/netcoreapp3.1/gmailFeeder.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/Debug/netcoreapp3.1/gmailFeeder.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/Debug/netcoreapp3.1/gmailFeeder.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/gmailFeeder.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/gmailFeeder.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/gmailFeeder.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/js/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/gmailFeeder/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GmailAPI/.vs/GmailAPI/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../GmailAPI/.vs/GmailAPI/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GmailAPI/.vs/GmailAPI/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../GmailAPI/.vs/GmailAPI/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/BucketClassLibrary.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/BucketClassLibrary.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/BucketClassLibrary.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/BucketClassLibrary.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/Debug/netcoreapp3.1/BucketClassLibrary.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/Debug/netcoreapp3.1/BucketClassLibrary.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GmailAPI/BucketClassLibrary/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GmailAPI/GmailAPI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GmailAPI/GmailAPI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GmailAPI/GmailAPI/obj/Debug/GmailAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../GmailAPI/GmailAPI/obj/Debug/GmailAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -321,6 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -334,6 +48,8 @@
       <workItem from="1636837009671" duration="4160000" />
       <workItem from="1636864211189" duration="5995000" />
       <workItem from="1636921659200" duration="3459000" />
+      <workItem from="1637196930855" duration="149000" />
+      <workItem from="1637197106140" duration="44000" />
     </task>
     <servers />
   </component>
@@ -351,5 +67,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
