@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "401854e3-2e57-415b-b964-ab59cc8f4c0a": {
+      "ProjectGuid": "401854e3-2e57-415b-b964-ab59cc8f4c0a",
+      "DisplayName": "BuckitWeb",
+      "ColorIndex": 0
+    },
+    "affb86a4-d1ca-445a-abac-65f03e8fa1e8": {
+      "ProjectGuid": "affb86a4-d1ca-445a-abac-65f03e8fa1e8",
+      "DisplayName": "BuckitWeb",
+      "ColorIndex": 1
+    },
+    "e9b060b8-7985-4782-b954-829caf2e5a23": {
+      "ProjectGuid": "e9b060b8-7985-4782-b954-829caf2e5a23",
+      "DisplayName": "Buckit.Model",
+      "ColorIndex": 2
+    },
+    "83b27bb8-1cc7-4ce2-80a1-d3e1c5bbd483": {
+      "ProjectGuid": "83b27bb8-1cc7-4ce2-80a1-d3e1c5bbd483",
+      "DisplayName": "Buckit.Data",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "54683be2-97b8-48cf-9cec-8464ba3d63c2": {
+      "ProjectGuid": "54683be2-97b8-48cf-9cec-8464ba3d63c2",
+      "DisplayName": "Buckit.Data",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

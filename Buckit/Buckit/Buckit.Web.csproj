@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Buckit.API\Buckit.API.csproj" />
     <ProjectReference Include="..\Buckit.Data\Buckit.Data.csproj" />
   </ItemGroup>
 

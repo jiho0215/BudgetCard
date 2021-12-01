@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xolH1rDQI2xyuQqSgdQu1Wayn+SBN1UiTKhFgLSy0FC3MgS8Zja/WzGA25yl4HcHhmcPCY56v/bKkS4VGDpsjg==",
+  "dgSpecHash": "8CjSmQWAVb+zzf5TqVRjxyvy6B10uW7of18LjjnTbROu/JXZABbKxSbzPjnTr+stevZqmPNZ1RF6WffMH0ilNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jiho0\\Documents\\GitHub\\BudgetCard\\Buckit\\Buckit.Model\\Buckit.Model.csproj",
   "expectedPackageFiles": [
@@ -22,13 +22,9 @@
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
-    "C:\\Users\\jiho0\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\jiho0\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\jiho0\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
-    "C:\\Users\\jiho0\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\jiho0\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
-    "C:\\Users\\jiho0\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    "C:\\Users\\jiho0\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
   ],
   "logs": []
 }

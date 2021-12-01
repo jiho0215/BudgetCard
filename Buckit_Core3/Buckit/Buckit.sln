@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuckitWeb", "BuckitWeb\BuckitWeb.csproj", "{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buckit.Data", "Buckit.Data\Buckit.Data.csproj", "{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E3B6EBC-0CC4-4288-8733-8530BE35B0C2}
+	EndGlobalSection
+EndGlobal

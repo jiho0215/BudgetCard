@@ -1,0 +1,12 @@
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\bin\Debug\net6.0\Buckit.Model.deps.json
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\bin\Debug\net6.0\Buckit.Model.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\bin\Debug\net6.0\ref\Buckit.Model.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\bin\Debug\net6.0\Buckit.Model.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\net6.0\Buckit.Model.csproj.AssemblyReference.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\net6.0\Buckit.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\net6.0\Buckit.Model.AssemblyInfoInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\net6.0\Buckit.Model.AssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\net6.0\Buckit.Model.csproj.CoreCompileInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\net6.0\Buckit.Model.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\net6.0\ref\Buckit.Model.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit\Buckit.Model\obj\Debug\net6.0\Buckit.Model.pdb

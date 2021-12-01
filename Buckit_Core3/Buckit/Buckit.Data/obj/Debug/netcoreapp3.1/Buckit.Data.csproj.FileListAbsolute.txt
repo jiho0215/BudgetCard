@@ -1,0 +1,13 @@
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\bin\Debug\netcoreapp3.1\Buckit.Data.deps.json
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\bin\Debug\netcoreapp3.1\Buckit.Data.runtimeconfig.json
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\bin\Debug\netcoreapp3.1\Buckit.Data.runtimeconfig.dev.json
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\bin\Debug\netcoreapp3.1\Buckit.Data.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\bin\Debug\netcoreapp3.1\Buckit.Data.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\obj\Debug\netcoreapp3.1\Buckit.Data.csproj.AssemblyReference.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\obj\Debug\netcoreapp3.1\Buckit.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\obj\Debug\netcoreapp3.1\Buckit.Data.AssemblyInfoInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\obj\Debug\netcoreapp3.1\Buckit.Data.AssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\obj\Debug\netcoreapp3.1\Buckit.Data.csproj.CoreCompileInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\obj\Debug\netcoreapp3.1\Buckit.Data.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\obj\Debug\netcoreapp3.1\Buckit.Data.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.Data\obj\Debug\netcoreapp3.1\Buckit.Data.genruntimeconfig.cache

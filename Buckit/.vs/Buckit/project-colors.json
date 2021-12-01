@@ -30,7 +30,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "4e4d1151-61b2-4c49-aadc-735289c9a214": {
+      "ProjectGuid": "4e4d1151-61b2-4c49-aadc-735289c9a214",
+      "DisplayName": "Buckit.IntegrationTests",
+      "ColorIndex": 5
+    },
+    "b213cf2a-a345-4be2-8ea7-240117f74279": {
+      "ProjectGuid": "b213cf2a-a345-4be2-8ea7-240117f74279",
+      "DisplayName": "Web",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 7
 }

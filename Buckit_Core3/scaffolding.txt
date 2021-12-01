@@ -1,0 +1,22 @@
+
+PostgreSQL Scaffolding
+
+Class Library Core 6.0.0
+
+dotnet tool install --global dotnet-ef --version 6.0.0
+
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.NetCore.App
+Npgsql.EntityFrameworkCore.PostgreSQL
+Npgsql.EntityFrameworkCore.PostgreSQL.Design
+dotnet ef dbcontext scaffold "Host=bucket-db-server.postgres.database.azure.com;Database=buckitdb;Username=bucketdbserveradmin@bucket-db-server;Password=Hahs1357" Npgsql.EntityFrameworkCore.PostgreSQL -o Models -f
+Scaffold-DbContext "Server=(localdb)\v11.0;Database=Blogging;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
+
+Startup project 'Buckit.Data.csproj' targets framework '.NETStandard'. 
+There is no runtime associated with this framework, and projects targeting it cannot be executed directly. 
+To use the Entity Framework Core .NET Command-line Tools with this project, 
+add an executable project targeting .NET Core or .NET Framework that references this project, 
+and set it as the startup project using --startup-project; or, update this project to cross-target 
+.NET Core or .NET Framework. For more information on using the Entity Framework Tools with 
+.NET Standard projects, see https://go.microsoft.com/fwlink/?linkid=2034781
