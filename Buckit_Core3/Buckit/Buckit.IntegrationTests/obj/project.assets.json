@@ -5277,7 +5277,8 @@
   },
   "packageFolders": {
     "C:\\Users\\jiho0\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5289,7 +5290,8 @@
       "outputPath": "C:\\Users\\jiho0\\Documents\\GitHub\\BudgetCard\\Buckit_Core3\\Buckit\\Buckit.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\jiho0\\AppData\\Roaming\\NuGet\\NuGet.Config",
