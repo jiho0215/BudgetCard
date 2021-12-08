@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuckitWeb", "BuckitWeb\BuckitWeb.csproj", "{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buckit.Web", "Buckit.Web\Buckit.Web.csproj", "{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buckit.Data", "Buckit.Data\Buckit.Data.csproj", "{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buckit.Model", "Buckit.Model\Buckit.Model.csproj", "{17A8CF35-D383-45FE-932B-2EC99B02058B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buckit.Data", "Buckit.Data\Buckit.Data.csproj", "{D2468543-F7B5-4B5F-B4AC-2085FF59E7D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buckit.IntegrationTests", "Buckit.IntegrationTests\Buckit.IntegrationTests.csproj", "{AC342472-CE84-4B23-A50E-A985F88743FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,18 @@ Global
 		{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFFB86A4-D1CA-445A-ABAC-65F03E8FA1E8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54683BE2-97B8-48CF-9CEC-8464BA3D63C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A8CF35-D383-45FE-932B-2EC99B02058B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A8CF35-D383-45FE-932B-2EC99B02058B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A8CF35-D383-45FE-932B-2EC99B02058B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A8CF35-D383-45FE-932B-2EC99B02058B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2468543-F7B5-4B5F-B4AC-2085FF59E7D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2468543-F7B5-4B5F-B4AC-2085FF59E7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2468543-F7B5-4B5F-B4AC-2085FF59E7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2468543-F7B5-4B5F-B4AC-2085FF59E7D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC342472-CE84-4B23-A50E-A985F88743FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC342472-CE84-4B23-A50E-A985F88743FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC342472-CE84-4B23-A50E-A985F88743FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC342472-CE84-4B23-A50E-A985F88743FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

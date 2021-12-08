@@ -1,0 +1,9 @@
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\BuckitWeb\obj\Debug\netcoreapp3.1\BuckitWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\BuckitWeb\obj\Debug\netcoreapp3.1\BuckitWeb.AssemblyInfoInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\BuckitWeb\obj\Debug\netcoreapp3.1\BuckitWeb.AssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\BuckitWeb\obj\Debug\netcoreapp3.1\BuckitWeb.csproj.CoreCompileInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\BuckitWeb\obj\Debug\netcoreapp3.1\BuckitWeb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\BuckitWeb\obj\Debug\netcoreapp3.1\BuckitWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\BuckitWeb\obj\Debug\netcoreapp3.1\BuckitWeb.RazorAssemblyInfo.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\BuckitWeb\obj\Debug\netcoreapp3.1\BuckitWeb.RazorAssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\BuckitWeb\obj\Debug\netcoreapp3.1\BuckitWeb.csproj.AssemblyReference.cache

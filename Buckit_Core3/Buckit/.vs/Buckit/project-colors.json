@@ -30,7 +30,27 @@
       "ProjectGuid": "54683be2-97b8-48cf-9cec-8464ba3d63c2",
       "DisplayName": "Buckit.Data",
       "ColorIndex": 4
+    },
+    "aed1fe1d-e268-4ab5-aa0a-c48fd58de796": {
+      "ProjectGuid": "aed1fe1d-e268-4ab5-aa0a-c48fd58de796",
+      "DisplayName": "Bucket.Model",
+      "ColorIndex": 5
+    },
+    "17a8cf35-d383-45fe-932b-2ec99b02058b": {
+      "ProjectGuid": "17a8cf35-d383-45fe-932b-2ec99b02058b",
+      "DisplayName": "Buckit.Model",
+      "ColorIndex": 6
+    },
+    "d2468543-f7b5-4b5f-b4ac-2085ff59e7d1": {
+      "ProjectGuid": "d2468543-f7b5-4b5f-b4ac-2085ff59e7d1",
+      "DisplayName": "Buckit.Data",
+      "ColorIndex": 7
+    },
+    "ac342472-ce84-4b23-a50e-a985f88743fb": {
+      "ProjectGuid": "ac342472-ce84-4b23-a50e-a985f88743fb",
+      "DisplayName": "Buckit.IntegrationTests",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 9
 }

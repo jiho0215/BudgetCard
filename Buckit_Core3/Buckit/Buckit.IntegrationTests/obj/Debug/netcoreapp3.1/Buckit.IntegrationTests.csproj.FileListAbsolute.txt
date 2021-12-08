@@ -1,0 +1,6 @@
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.IntegrationTests\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.IntegrationTests\obj\Debug\netcoreapp3.1\Buckit.IntegrationTests.csproj.AssemblyReference.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.IntegrationTests\obj\Debug\netcoreapp3.1\Buckit.IntegrationTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.IntegrationTests\obj\Debug\netcoreapp3.1\Buckit.IntegrationTests.AssemblyInfoInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.IntegrationTests\obj\Debug\netcoreapp3.1\Buckit.IntegrationTests.AssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Buckit_Core3\Buckit\Buckit.IntegrationTests\obj\Debug\netcoreapp3.1\Buckit.IntegrationTests.csproj.CoreCompileInputs.cache

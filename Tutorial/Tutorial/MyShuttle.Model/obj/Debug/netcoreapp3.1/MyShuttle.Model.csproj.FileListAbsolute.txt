@@ -1,0 +1,13 @@
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\bin\Debug\netcoreapp3.1\MyShuttle.Model.deps.json
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\bin\Debug\netcoreapp3.1\MyShuttle.Model.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\bin\Debug\netcoreapp3.1\MyShuttle.Model.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\obj\Debug\netcoreapp3.1\MyShuttle.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\obj\Debug\netcoreapp3.1\MyShuttle.Model.AssemblyInfoInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\obj\Debug\netcoreapp3.1\MyShuttle.Model.AssemblyInfo.cs
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\obj\Debug\netcoreapp3.1\MyShuttle.Model.csproj.CoreCompileInputs.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\obj\Debug\netcoreapp3.1\MyShuttle.Model.dll
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\obj\Debug\netcoreapp3.1\MyShuttle.Model.pdb
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\bin\Debug\netcoreapp3.1\MyShuttle.Model.runtimeconfig.json
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\bin\Debug\netcoreapp3.1\MyShuttle.Model.runtimeconfig.dev.json
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\obj\Debug\netcoreapp3.1\MyShuttle.Model.genruntimeconfig.cache
+C:\Users\jiho0\Documents\GitHub\BudgetCard\Tutorial\Tutorial\MyShuttle.Model\obj\Debug\netcoreapp3.1\MyShuttle.Model.csproj.AssemblyReference.cache
